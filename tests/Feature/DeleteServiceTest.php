@@ -10,7 +10,6 @@ use Tests\TestCase;
 
 class DeleteServiceTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -24,6 +23,7 @@ class DeleteServiceTest extends TestCase
         $this->actingAs($user)->post('/service', [
             'title' => 'lavandero',
             'description' => 'asdasdasd',
+            'type_service_id' => 2,
             'price' => 4000
         ]);
 
