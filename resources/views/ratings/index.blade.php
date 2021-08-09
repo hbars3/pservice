@@ -1,4 +1,4 @@
-<b>Calificacion Promedio</b>
+<strong>Calificacion Promedio</strong>
     <input id="input-3" name="input-3" class="rating rating-loading" data-min="0" data-max="5" data-size="md" data-step="0.1" value="{{ $prom }}" disabled="true">
 
 @foreach ($service->purchases->reverse() as $purchase)

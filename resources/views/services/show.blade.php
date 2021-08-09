@@ -38,13 +38,13 @@
                                 <p class="text-muted text-center">{{ $service->user->profile->profession ?? '' }}</p>
                                 <ul class="list-group list-group-unbordered mb-3">
                                     <li class="list-group-item">
-                                        <b>Puntuacion</b> <a class="float-right">1,322</a>
+                                        <strong>Puntuacion</strong> <a class="float-right">1,322</a>
                                     </li>
                                     <li class="list-group-item">
-                                        <b>Seguidores</b> <a class="float-right">543</a>
+                                        <strong>Seguidores</strong> <a class="float-right">543</a>
                                     </li>
                                     <li class="list-group-item">
-                                        <b>Total servicios</b> <a class="float-right">20</a>
+                                        <strong>Total servicios</strong> <a class="float-right">20</a>
                                     </li>
                                 </ul>
                             </div>
@@ -162,7 +162,7 @@
                                             <form class="form-horizontal" action="{{ route('rating.update', $rating->id) }}" method="post">
                                                 @method('PUT')
                                                 {{csrf_field()}}
-                                                <p><b>Califique el servicio aqui :</b></p>
+                                                <p><strong>Califique el servicio aqui :</strong></p>
                                                 <input id="input-1" name="rating_star" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="">
                                                 <div class="input-group input-group-sm mb-0">
                                                     <input class="form-control form-control-sm" type="text" name="comment" id="" placeholder="Danos tu opinión...">

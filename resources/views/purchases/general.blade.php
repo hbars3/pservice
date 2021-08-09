@@ -29,7 +29,7 @@
                     <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos pagados</b></span>
+                        <span class="info-box-text"><strong>Más contratos pagados</strong></span>
                         <span class="info-box-text">{{$paymented_user->profile->firstname . ' ' . $paymented_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$paymented_user->number_purchases}}</span>
                     </div>
@@ -69,7 +69,7 @@
                     <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos por pagar</b></span>
+                        <span class="info-box-text"><strong>Más contratos por pagar</strong></span>
                         <span class="info-box-text">{{$no_paymented_user->profile->firstname . ' ' . $no_paymented_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$no_paymented_user->number_purchases}}</span>
                     </div>
@@ -109,7 +109,7 @@
                     <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos recibidos</b></span>
+                        <span class="info-box-text"><strong>Más contratos recibidos</strong></span>
                         <span class="info-box-text">{{$recived_service_user->profile->firstname . ' ' . $recived_service_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$recived_service_user->number_purchases}}</span>
                     </div>
@@ -149,7 +149,7 @@
                     <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos pendientes</b></span>
+                        <span class="info-box-text"><strong>Más contratos pendientes</strong></span>
                         <span class="info-box-text">{{$pending_service_user->profile->firstname . ' ' . $pending_service_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$pending_service_user->number_purchases}}</span>
                     </div>

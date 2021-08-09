@@ -28,13 +28,13 @@
                         <p class="text-muted text-center">{{ $profile->profession ?? '' }}</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                              <b>Puntuacion </b> <a class="float-right">-</a>
+                              <strong>Puntuacion </strong> <a class="float-right">-</a>
                             </li>
                             <li class="list-group-item">
-                              <b>Seguidores</b> <a class="float-right">-</a>
+                              <strong>Seguidores</strong> <a class="float-right">-</a>
                             </li>
                             <li class="list-group-item">
-                              <b>Total servicios</b> <a class="float-right">-</a>
+                              <strong>Total servicios</strong> <a class="float-right">-</a>
                             </li>
                           </ul>
 
