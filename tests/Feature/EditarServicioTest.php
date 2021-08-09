@@ -10,7 +10,6 @@ use Tests\TestCase;
 
 class EditarServicioTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -24,6 +23,7 @@ class EditarServicioTest extends TestCase
         $this->actingAs($user)->post('/service', [
             'title' => 'lavandero',
             'description' => 'asdasdasd',
+            'type_service_id' => 1,
             'price' => 4000
         ]);
 
@@ -32,6 +32,7 @@ class EditarServicioTest extends TestCase
         $response = $this->actingAs($user)->put('/service/' . $service->id, [
             'title' => 'cocinero',
             'description' => 'asdasdasdf',
+            'type_service_id' => 2,
             'price' => 5000
         ]);
 
