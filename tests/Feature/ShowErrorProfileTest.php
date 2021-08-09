@@ -10,7 +10,6 @@ use Tests\TestCase;
 
 class ShowErrorProfileTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *

@@ -10,7 +10,6 @@ use Tests\TestCase;
 
 class ShowProfileTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
