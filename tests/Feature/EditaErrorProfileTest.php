@@ -9,7 +9,6 @@ use Tests\TestCase;
 
 class EditaErrorProfileTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -24,7 +23,7 @@ class EditaErrorProfileTest extends TestCase
             'firstname' => 'juanito',
             'lastname' => 'cigarro',
             'address' => 'El callao',
-            'phone_number' => 7321234123,
+            'phone_number' => "7321234123",
             'profession' => 'el economista'
         ]);
 
