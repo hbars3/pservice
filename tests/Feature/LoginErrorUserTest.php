@@ -9,7 +9,6 @@ use Tests\TestCase;
 
 class LoginErrorUserTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
