@@ -9,7 +9,6 @@ use Tests\TestCase;
 
 class StoreUserTest extends TestCase
 {
-    use RefreshDatabase;
 
     /** @test */
     public function a_user_can_be_created()
@@ -17,17 +16,17 @@ class StoreUserTest extends TestCase
 
         $this->withoutExceptionHandling();
         $response = $this->post('/register', [
-            'name' => 'juanito',
-            'email' => 'juanito@test.com',
+            'name' => 'pablo5',
+            'email' => 'pablo5@test.com',
             'password' => '12345678',
             'password_confirmation' => '12345678'
         ]);
 
         // $response->assertOk();
 
-        $user = User::where('email', 'juanito@test.com')->first();
+        $user = User::where('email', 'pablo5@test.com')->first();
 
-        $this->assertEquals($user->name, 'juanito');
-        $this->assertEquals($user->email, 'juanito@test.com');
+        $this->assertEquals($user->name, 'pablo5');
+        $this->assertEquals($user->email, 'pablo5@test.com');
     }
 }
