@@ -10,7 +10,6 @@ use Tests\TestCase;
 
 class StoreServiceTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -24,6 +23,7 @@ class StoreServiceTest extends TestCase
         $response = $this->actingAs($user)->post('/service', [
             'title' => 'lavandero',
             'description' => 'asdasdasd',
+            'type_service_id' => 1,
             'price' => 4000
         ]);
 
@@ -31,6 +31,7 @@ class StoreServiceTest extends TestCase
 
         $this->assertEquals($service->title, 'lavandero');
         $this->assertEquals($service->description, 'asdasdasd');
+        $this->assertEquals($service->type_service_id, 1);
         $this->assertEquals($service->price, 4000);
     }
 }
