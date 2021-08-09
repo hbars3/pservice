@@ -121,13 +121,13 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Codigo</th>
-                                              <th>Servicio ofrecido</th>
-                                              <th>Cliente</th>
-                                              <th>Fecha estimada</th>
-                                              <th>Confirmacion de cliente</th>
-                                              <th>Pago</th>
-                                              <th>Chat</th>
+                                              <th id="cod">Codigo</th>
+                                              <th id="serv">Servicio ofrecido</th>
+                                              <th id="cli">Cliente</th>
+                                              <th id="fech">Fecha estimada</th>
+                                              <th id="conf">Confirmacion de cliente</th>
+                                              <th id="pago">Pago</th>
+                                              <th id="chat">Chat</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -212,11 +212,11 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Codigo</th>
-                                              <th>Servicio ofrecido</th>
-                                              <th>Cliente</th>
-                                              <th>Confirmacion de cliente</th>
-                                              <th>Satisfacción</th>
+                                              <th id="codi">Codigo</th>
+                                              <th id="serv">Servicio ofrecido</th>
+                                              <th id="clie">Cliente</th>
+                                              <th id="confi">Confirmacion de cliente</th>
+                                              <th id="satis">Satisfacción</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -292,11 +292,11 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Código</th>
-                                              <th>Servicio requerido</th>
-                                              <th>Servidor</th>
-                                              <th>Confirmacion de servidor</th>
-                                              <th>Pago</th>
+                                              <th id="codig">Código</th>
+                                              <th id="servi">Servicio requerido</th>
+                                              <th id="servid">Servidor</th>
+                                              <th id="confir">Confirmacion de servidor</th>
+                                              <th id="pagos">Pago</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -370,11 +370,11 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Codigo</th>
-                                              <th>Servicio requerido</th>
-                                              <th>Servidor</th>
-                                              <th>Confirmacion de servidor</th>
-                                              <th>Satisfacción</th>
+                                              <th id="codigo">Codigo</th>
+                                              <th id="servicioreq">Servicio requerido</th>
+                                              <th id="servidor">Servidor</th>
+                                              <th id="confirma">Confirmacion de servidor</th>
+                                              <th id="satisfaccion">Satisfacción</th>
                                             </tr>
                                           </thead>
                                           <tbody>

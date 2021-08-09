@@ -44,10 +44,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="u">user id</th>
+                <th id="n">Nombre</th>
+                <th id="a">Apellido</th>
+                <th id="c">Contratos</th>
             </tr>
 
             </thead>
@@ -84,10 +84,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="us">user id</th>
+                <th id="no">Nombre</th>
+                <th id="ap">Apellido</th>
+                <th id="co">Contratos</th>
             </tr>
 
             </thead>
@@ -124,10 +124,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="use">user id</th>
+                <th id="nom">Nombre</th>
+                <th id="ape">Apellido</th>
+                <th id="con">Contratos</th>
             </tr>
 
             </thead>
@@ -163,10 +163,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="user">user id</th>
+                <th id="nomb">Nombre</th>
+                <th id="apel">Apellido</th>
+                <th id="cont">Contratos</th>
             </tr>
 
             </thead>

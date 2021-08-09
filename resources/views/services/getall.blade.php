@@ -28,13 +28,13 @@
 
             <thead class="thead-light">
             <tr>
-                <th>#</th>
-                <th>id</th>
-                <th>title</th>
-                <th>operario</th>
-                <th>categoría</th>
-                <th>precio</th>
-                <th>contratos</th>
+                <th id="num">#</th>
+                <th id="id">id</th>
+                <th id="titulo">title</th>
+                <th id="operario">operario</th>
+                <th id="categoria">categoría</th>
+                <th id="precio">precio</th>
+                <th id="contratos">contratos</th>
             </tr>
 
             </thead>
