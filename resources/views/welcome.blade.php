@@ -155,7 +155,6 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col iconos">
-                    <!-- <i class="fas fa-screwdriver"> - </i>-->
                     <i class="fas fa-hard-hat"> - </i>
                     <i class="fas fa-brush"> - </i>
                     <i class="fas fa-faucet"> - </i>
@@ -164,7 +163,6 @@
                     <i class="fas fa-user-shield"> - </i>
                     <i class="fas fa-laptop-medical"> - </i>
                     <i class="fas fa-hammer"> - </i>
-                    <!--   <i class="fas fa-wrench"> - </i>-->
                     <i class="fas fa-tools"></i>
                 </div>
             </div>
