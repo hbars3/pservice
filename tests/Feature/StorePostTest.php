@@ -2,15 +2,15 @@
 
 namespace Tests\Feature;
 
+use App\Models\Post;
 use App\Models\Profile;
 use App\Models\Service;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class StoreServiceTest extends TestCase
+class StorePostTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -21,16 +21,17 @@ class StoreServiceTest extends TestCase
         $this->withoutExceptionHandling();
         $profile = Profile::factory()->count(1)->create();
         $user = $profile->first()->user;
-        $response = $this->actingAs($user)->post('/service', [
-            'title' => 'lavandero',
-            'description' => 'asdasdasd',
-            'price' => 4000
+        $service = Service::where('user_id', '<>', $user->id)->first();
+        $response = $this->actingAs($user)->post('/post', [
+            'user_id' => $user->id,
+            'service_id' => $service->id,
+            'body' => 'servicio de prueba'
         ]);
+        $post = Post::where([
+            ['user_id', $user->id],
+            ['service_id', $service->id]
+        ])->first();
 
-        $service = Service::where('title', 'lavandero')->first();
-
-        $this->assertEquals($service->title, 'lavandero');
-        $this->assertEquals($service->description, 'asdasdasd');
-        $this->assertEquals($service->price, 4000);
+        $this->assertEquals($post->body, 'servicio de prueba');
     }
 }
