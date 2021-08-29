@@ -99,7 +99,7 @@
                                     <div class="icon">
                                         <i class="ion ion-bag"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                
                                 </div>
                                 <div class="row">
                                   <div class="col-12">
@@ -190,7 +190,7 @@
                                     <div class="icon">
                                         <i class="ion ion-stats-bars"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                   
                                 </div>
                                 <div class="row">
                                   <div class="col-12">
@@ -269,7 +269,7 @@
                                   <div class="icon">
                                     <i class="ion ion-bag"></i>
                                   </div>
-                                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                 
                                 </div>
                                 <!-- small box -->
                                 <div class="row">
@@ -347,7 +347,7 @@
                                     <div class="icon">
                                         <i class="ion ion-stats-bars"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                    
                                 </div>
                                 <!-- small box -->
                                 <div class="row">
