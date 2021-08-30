@@ -85,7 +85,7 @@
                                                                 <tr>
                                                                     <td>{{$loop->iteration}}</td>
                                                                     <td>{{$service->id}}</td>
-                                                                    <td>{{$service->title}}</td>
+                                                                    <td><a href="{{ route("service.show", $service) }}">{{$service->title}}</a></td>
                                                                     <td>{{$service->price}}</td>
                                                                     <td>{{$service->description}}</td>
                                                                 </tr>
