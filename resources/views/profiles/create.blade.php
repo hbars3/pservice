@@ -67,11 +67,7 @@
                             <div class="col-md-6">
                                 <input id="firstname" type="text" class="form-control" name="firstname" value="{{ $profile->firstname ?? '' }}">
 
-                            <!-- @error('name') -->
-                                <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                            <!--         <strong>{{ $message }}</strong> -->
-                                <!--     </span> -->
-                            <!-- @enderror -->
+                
                             </div>
                         </div>
 
@@ -81,11 +77,6 @@
                             <div class="col-md-6">
                                 <input id="lastname" type="text" class="form-control" name="lastname" value="{{ $profile->lastname ?? '' }}">
 
-                            <!-- @error('name') -->
-                                <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                            <!--         <strong>{{ $message }}</strong> -->
-                                <!--     </span> -->
-                            <!-- @enderror -->
                             </div>
                         </div>
 
@@ -95,11 +86,7 @@
                             <div class="col-md-6">
                                 <input id="address" type="text" class="form-control" name="address" value="{{ $profile->address ?? '' }}">
 
-                            <!-- @error('name') -->
-                                <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                            <!--         <strong>{{ $message }}</strong> -->
-                                <!--     </span> -->
-                            <!-- @enderror -->
+
                             </div>
                         </div>
 
@@ -109,11 +96,7 @@
                             <div class="col-md-6">
                                 <input id="phone_number" type="text" class="form-control" name="phone_number" value="{{ $profile->phone_number ?? '' }}">
 
-                            <!-- @error('name') -->
-                                <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                            <!--         <strong>{{ $message }}</strong> -->
-                                <!--     </span> -->
-                            <!-- @enderror -->
+
                             </div>
                         </div>
 
@@ -123,11 +106,6 @@
                             <div class="col-md-6">
                                 <input id="phone_number" type="text" class="form-control" name="profession" value="{{ $profile->profession ?? '' }}">
 
-                            <!-- @error('name') -->
-                                <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                            <!--         <strong>{{ $message }}</strong> -->
-                                <!--     </span> -->
-                            <!-- @enderror -->
                             </div>
                         </div>
 

@@ -69,7 +69,6 @@ class ServiceController extends Controller
         ];
         $message = ["required"=>' :attribute es requerido' ];
         $this->validate($request, $fields, $message);
-        // $serviceData=request()->all();
 
         $serviceData = request()->except('_token');
         $serviceData['user_id'] = \Auth::user()->id;
@@ -208,9 +207,7 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
-//        if(Storage::delete('public/'.$service->picture_path)){
-//            $service->delete();
-//        }
+
         $service->delete();
         return redirect('service')->with('message','Servicio eliminado');
     }

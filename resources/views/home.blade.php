@@ -28,13 +28,13 @@
         <table class="table table-light table-hover text-center text-middle" id="example">
             <thead class="thead-light">
             <tr>
-                <th><i class="fas fa-clipboard-check"></th>
-                <th>Foto  <i class="fas fa-camera"></i></th>
-                <th>Titulo  <i class="fas fa-book"></i></th>
-                <th>Categoría  <i class="fas fa-book-open"></i></th>
-                <th>Tecnico  <i class="fas fa-user"></i></th>
-                <th>Precio(soles)  <i class="fas fa-hand-holding-usd"></i></th>
-                <th>Descripción  <i class="fas fa-id-card"></i></th>
+                <th id="check"><i class="fas fa-clipboard-check"></th>
+                <th id="foto">Foto  <i class="fas fa-camera"></i></th>
+                <th id="titulo">Titulo  <i class="fas fa-book"></i></th>
+                <th id="categoria">Categoría  <i class="fas fa-book-open"></i></th>
+                <th id="tecnico">Tecnico  <i class="fas fa-user"></i></th>
+                <th id="precio">Precio(soles)  <i class="fas fa-hand-holding-usd"></i></th>
+                <th id="desc">Descripción  <i class="fas fa-id-card"></i></th>
             </tr>
 
             </thead>

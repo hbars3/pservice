@@ -27,15 +27,15 @@
 
         <thead class="thead-light">
         <tr>
-            <th>id</th>
-            <th>username</th>
-            <th>email</th>
-            <th>firstname</th>
-            <th>lastname</th>
-            <th>address</th>
-            <th>administrator</th>
-            <th>telephone</th>
-            <th>profession</th>
+            <th id="id">id</th>
+            <th id="usern">username</th>
+            <th id="email">email</th>
+            <th id="fn">firstname</th>
+            <th id="ln">lastname</th>
+            <th id="add">address</th>
+            <th id="admin">administrator</th>
+            <th id="tele">telephone</th>
+            <th id="prof">profession</th>
         </tr>
 
         </thead>

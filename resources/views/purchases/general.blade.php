@@ -29,7 +29,7 @@
                     <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos pagados</b></span>
+                        <span class="info-box-text"><strong>Más contratos pagados</strong></span>
                         <span class="info-box-text">{{$paymented_user->profile->firstname . ' ' . $paymented_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$paymented_user->number_purchases}}</span>
                     </div>
@@ -44,10 +44,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="u">user id</th>
+                <th id="n">Nombre</th>
+                <th id="a">Apellido</th>
+                <th id="c">Contratos</th>
             </tr>
 
             </thead>
@@ -69,7 +69,7 @@
                     <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos por pagar</b></span>
+                        <span class="info-box-text"><strong>Más contratos por pagar</strong></span>
                         <span class="info-box-text">{{$no_paymented_user->profile->firstname . ' ' . $no_paymented_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$no_paymented_user->number_purchases}}</span>
                     </div>
@@ -84,10 +84,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="us">user id</th>
+                <th id="no">Nombre</th>
+                <th id="ap">Apellido</th>
+                <th id="co">Contratos</th>
             </tr>
 
             </thead>
@@ -109,7 +109,7 @@
                     <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos recibidos</b></span>
+                        <span class="info-box-text"><strong>Más contratos recibidos</strong></span>
                         <span class="info-box-text">{{$recived_service_user->profile->firstname . ' ' . $recived_service_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$recived_service_user->number_purchases}}</span>
                     </div>
@@ -124,10 +124,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="use">user id</th>
+                <th id="nom">Nombre</th>
+                <th id="ape">Apellido</th>
+                <th id="con">Contratos</th>
             </tr>
 
             </thead>
@@ -149,7 +149,7 @@
                     <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text"><b>Más contratos pendientes</b></span>
+                        <span class="info-box-text"><strong>Más contratos pendientes</strong></span>
                         <span class="info-box-text">{{$pending_service_user->profile->firstname . ' ' . $pending_service_user->profile->lastname}}</span>
                         <span class="info-box-number">{{$pending_service_user->number_purchases}}</span>
                     </div>
@@ -163,10 +163,10 @@
 
             <thead class="thead-light">
             <tr>
-                <th>user id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Contratos</th>
+                <th id="user">user id</th>
+                <th id="nomb">Nombre</th>
+                <th id="apel">Apellido</th>
+                <th id="cont">Contratos</th>
             </tr>
 
             </thead>

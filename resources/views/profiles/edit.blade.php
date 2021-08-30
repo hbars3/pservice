@@ -82,7 +82,7 @@
                         <ul class="nav nav-pills">
                             <li class="nav-item"><a class="nav-link active" href="#servof" data-toggle="tab">Servicios ofrecidos</a></li>
                             <li class="nav-item"><a class="nav-link" href="#servre" data-toggle="tab">Servicios requeridos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Historial</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Historial</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Configuracion</a></li>
                         </ul>
                     </div>
@@ -121,13 +121,13 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Codigo</th>
-                                              <th>Servicio ofrecido</th>
-                                              <th>Cliente</th>
-                                              <th>Fecha estimada</th>
-                                              <th>Confirmacion de cliente</th>
-                                              <th>Pago</th>
-                                              <th>Chat</th>
+                                              <th id="cod">Codigo</th>
+                                              <th id="serv">Servicio ofrecido</th>
+                                              <th id="cli">Cliente</th>
+                                              <th id="fech">Fecha estimada</th>
+                                              <th id="conf">Confirmacion de cliente</th>
+                                              <th id="pago">Pago</th>
+                                              <th id="chat">Chat</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -212,11 +212,11 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Codigo</th>
-                                              <th>Servicio ofrecido</th>
-                                              <th>Cliente</th>
-                                              <th>Confirmacion de cliente</th>
-                                              <th>Satisfacción</th>
+                                              <th id="codi">Codigo</th>
+                                              <th id="serv">Servicio ofrecido</th>
+                                              <th id="clie">Cliente</th>
+                                              <th id="confi">Confirmacion de cliente</th>
+                                              <th id="satis">Satisfacción</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -292,11 +292,11 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Código</th>
-                                              <th>Servicio requerido</th>
-                                              <th>Servidor</th>
-                                              <th>Confirmacion de servidor</th>
-                                              <th>Pago</th>
+                                              <th id="codig">Código</th>
+                                              <th id="servi">Servicio requerido</th>
+                                              <th id="servid">Servidor</th>
+                                              <th id="confir">Confirmacion de servidor</th>
+                                              <th id="pagos">Pago</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -370,11 +370,11 @@
                                         <table class="table table-hover text-nowrap">
                                           <thead>
                                             <tr>
-                                              <th>Codigo</th>
-                                              <th>Servicio requerido</th>
-                                              <th>Servidor</th>
-                                              <th>Confirmacion de servidor</th>
-                                              <th>Satisfacción</th>
+                                              <th id="codigo">Codigo</th>
+                                              <th id="servicioreq">Servicio requerido</th>
+                                              <th id="servidor">Servidor</th>
+                                              <th id="confirma">Confirmacion de servidor</th>
+                                              <th id="satisfaccion">Satisfacción</th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -412,7 +412,7 @@
                         </div>
 
                         <!-- /.tab-pane -->
-                        <div class="tab-pane" id="timeline">
+                        <!-- <div class="tab-pane" id="timeline">
                             <div class="btn-group">
                                 <div class="timeline-item">
                                     <h3 class="timeline-header"><a href="#">Equipo de soporte</a> te ha enviado un email !</h3>
@@ -482,7 +482,7 @@
                                     <a class="btn btn-danger btn">Delete</a>
                                   </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- /.tab-pane -->
                         <div class="tab-pane" id="settings">
@@ -520,11 +520,7 @@
                                     <div class="col-md-6">
                                         <input id="firstname" type="text" class="form-control" name="firstname" value="{{ $profile->firstname ?? '' }}">
 
-                                        <!-- @error('name') -->
-                                        <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                                        <!--         <strong>{{ $message }}</strong> -->
-                                        <!--     </span> -->
-                                        <!-- @enderror -->
+
                                     </div>
                                 </div>
 
@@ -534,11 +530,6 @@
                                     <div class="col-md-6">
                                         <input id="lastname" type="text" class="form-control" name="lastname" value="{{ $profile->lastname ?? '' }}">
 
-                                        <!-- @error('name') -->
-                                        <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                                        <!--         <strong>{{ $message }}</strong> -->
-                                        <!--     </span> -->
-                                        <!-- @enderror -->
                                     </div>
                                 </div>
 
@@ -548,11 +539,7 @@
                                     <div class="col-md-6">
                                         <input id="address" type="text" class="form-control" name="address" value="{{ $profile->address ?? '' }}">
 
-                                        <!-- @error('name') -->
-                                        <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                                        <!--         <strong>{{ $message }}</strong> -->
-                                        <!--     </span> -->
-                                        <!-- @enderror -->
+
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -561,11 +548,7 @@
                                     <div class="col-md-6">
                                         <input id="phone_number" type="text" class="form-control" name="phone_number" value="{{ $profile->phone_number ?? '' }}">
 
-                                        <!-- @error('name') -->
-                                        <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                                        <!--         <strong>{{ $message }}</strong> -->
-                                        <!--     </span> -->
-                                        <!-- @enderror -->
+
                                     </div>
                                 </div>
 
@@ -575,11 +558,6 @@
                                     <div class="col-md-6">
                                         <input id="profession" type="text" class="form-control" name="profession" value="{{ $profile->profession ?? '' }}">
 
-                                        <!-- @error('name') -->
-                                        <!--     <span class="invalid&#45;feedback" role="alert"> -->
-                                        <!--         <strong>{{ $message }}</strong> -->
-                                        <!--     </span> -->
-                                        <!-- @enderror -->
                                     </div>
                                 </div>
 

@@ -73,11 +73,11 @@
                                                     <table class="table m-0">
                                                         <thead>
                                                             <tr>
-                                                                <th><i class="fas fa-clipboard-check"></i></th>
-                                                                <th>Codigo del servicio</th>
-                                                                <th>Titulo</th>
-                                                                <th>Precio</th>
-                                                                <th>Descripción</th>
+                                                                <th id="check"><i class="fas fa-clipboard-check"></i></th>
+                                                                <th id="codigo">Codigo del servicio</th>
+                                                                <th id="titulo">Titulo</th>
+                                                                <th id="precio">Precio</th>
+                                                                <th id="desc">Descripción</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>

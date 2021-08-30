@@ -162,7 +162,7 @@
                                             <form class="form-horizontal" action="{{ route('rating.update', $rating->id) }}" method="post">
                                                 @method('PUT')
                                                 {{csrf_field()}}
-                                                <p><b>Califique el servicio aqui :</b></p>
+                                                <p><strong>Califique el servicio aqui :</strong></p>
                                                 <input id="input-1" name="rating_star" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="">
                                                 <div class="input-group input-group-sm mb-0">
                                                     <input class="form-control form-control-sm" type="text" name="comment" id="" placeholder="Danos tu opinión...">

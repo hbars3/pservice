@@ -27,16 +27,16 @@
 
             <thead class="thead-light">
             <tr>
-                <th>#</th>
-                <th>id</th>
-                <th>Operario</th>
-                <th>Cliente</th>
-                <th>Titulo de servicio</th>
-                <th>Confirmado por cliente</th>
-                <th>Confirmado por operario</th>
-                <th>Pago</th>
-                <th>Estado</th>
-                <th>Calificación</th>
+                <th id="num">#</th>
+                <th id="id">id</th>
+                <th id="op">Operario</th>
+                <th id="cli">Cliente</th>
+                <th id="titu">Titulo de servicio</th>
+                <th id="conf-cli">Confirmado por cliente</th>
+                <th id="conf-op">Confirmado por operario</th>
+                <th id="pago">Pago</th>
+                <th id="esta">Estado</th>
+                <th id="cali">Calificación</th>
             </tr>
 
             </thead>
