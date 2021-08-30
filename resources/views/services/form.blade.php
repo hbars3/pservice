@@ -44,6 +44,15 @@
 
 
 <!-- Picture -->
+<script>
+updateFileLabelText = function() {
+    var file = document.getElementById('picture_path')
+    var inputLabel = document.getElementById('custom-file-label')
+
+    inputLabel.innerHTML = file.files.item(0).name
+}
+</script>
+
 <div class="form-group justify-content-around">
     <label for="picture_path" class="control-label">{{'Imagen'}}</label>
     <div class="input-group">
@@ -52,8 +61,10 @@
                 type="file"
                 class="custom-file-input"
                 name="picture_path"
-                id="picture_path">
+                id="picture_path"
+                onchange="javascript:updateFileLabelText()">
+            </input>
         </div>
-        <label class="custom-file-label" for="picture_path"></label>
+        <label id = "custom-file-label" class="custom-file-label" for="picture_path"></label>
     </div>
 </div>
