@@ -1,11 +1,12 @@
 version: '2'
 services:
   mariadb:
-    image: docker.io/bitnami/mariadb:10.3
+    image: hbars/tlpsmariadb:1.0
+    ports:
+      - '3306'
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-      - MARIADB_USER=bn_testlink
-      - MARIADB_DATABASE=bitnami_testlink
+      - MARIADB_ROOT_PASSWORD=12345678
     volumes:
       - 'mariadb_data:/bitnami/mariadb'
   testlink:
@@ -16,7 +17,8 @@ services:
     environment:
       - TESTLINK_DATABASE_HOST=mariadb
       - TESTLINK_DATABASE_PORT_NUMBER=3306
-      - TESTLINK_DATABASE_USER=bn_testlink
+      - TESTLINK_DATABASE_USER=root
+      - TESTLINK_DATABASE_PASSWORD=12345678
       - TESTLINK_USERNAME=user
       - TESTLINK_PASSWORD=bitnami
       - TESTLINK_DATABASE_NAME=bitnami_testlink
@@ -28,12 +30,13 @@ services:
   app:
     image: pservice
     build: .
+    #command: bash -c "php artisan migrate:refresh --seed && apache2 -DFOREGROUND"
     env_file:
-      - ./pservice/.env
+      - .env
     ports:
-      - "${APP_PORT}:${APP_PORT}"
-    volumes:
-      - .:/app
+      - "5000:80"
+    # volumes:
+    #   - .:/app
 volumes:
   mariadb_data:
     driver: local
