@@ -158,7 +158,9 @@ class PurchaseController extends Controller
      */
     public function update(Request $request,Purchase $purchase)
     {
-        $purchase->due_date = $request->get('due_date');
+        if ($request->get('due_date')){
+            $purchase->due_date = $request->get('due_date');
+        }
         if ($purchase->user_id == \Auth::user()->id) {
             $purchase->customer_confirmation = True;
         } else {
