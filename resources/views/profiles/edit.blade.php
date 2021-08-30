@@ -120,7 +120,7 @@
                                       </div>
                                       <!-- /.card-header -->
                                       <div class="card-body table-responsive p-0">
-                                        <table class="table table-hover text-nowrap">
+                                        <table class="table table-hover text-nowrap" id="svcpa">
                                           <thead>
                                             <tr>
                                               <th id="cod">Codigo</th>
@@ -211,7 +211,7 @@
                                       </div>
                                       <!-- /.card-header -->
                                       <div class="card-body table-responsive p-0">
-                                        <table class="table table-hover text-nowrap">
+                                        <table class="table table-hover text-nowrap" id="svcat">
                                           <thead>
                                             <tr>
                                               <th id="codi">Codigo</th>
@@ -291,7 +291,7 @@
                                       </div>
                                       <!-- /.card-header -->
                                       <div class="card-body table-responsive p-0">
-                                        <table class="table table-hover text-nowrap">
+                                        <table class="table table-hover text-nowrap" id="svcnr">
                                           <thead>
                                             <tr>
                                               <th id="codig">Código</th>
@@ -369,7 +369,7 @@
                                       </div>
                                       <!-- /.card-header -->
                                       <div class="card-body table-responsive p-0">
-                                        <table class="table table-hover text-nowrap">
+                                        <table class="table table-hover text-nowrap" id="svcre">
                                           <thead>
                                             <tr>
                                               <th id="codigo">Codigo</th>
@@ -588,4 +588,15 @@
         </div>
 
     </div>
+@stop
+
+@section('js')
+    <script>
+        $(document).ready( function () {
+            $('#svcnr').DataTable();
+            $('#svcpa').DataTable();
+            $('#svcat').DataTable();
+            $('#svcre').DataTable();
+        } );
+    </script>
 @stop

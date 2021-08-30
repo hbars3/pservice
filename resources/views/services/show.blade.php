@@ -112,7 +112,7 @@
 
                                 <div class="btn btn-info btn-lg btn-flat">
                                     <i class="fas fa-comments fa-lg mr-2"></i>
-                                    <a class="btn btn-info" type="button" href="/purchase/mensajeria/{{$purchase->code}}">Chat con el operario</a>  
+                                    <a class="btn btn-info" type="button" href="/purchase/mensajeria/{{$purchase->code}}">Chat con el operario</a>
                                 </div>
                             @endif
                         @endif

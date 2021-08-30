@@ -94,7 +94,10 @@ class ServiceController extends Controller
         $rating_available = False;
         $rating_id = null;
         $purchase = null;
-        $purchases = Purchase::where('service_id', '=', $service->id)->get();
+        $purchases = Purchase::where([
+            ['service_id', '=', $service->id],
+            ['user_id', '=', \Auth::user()->id]
+        ])->get();
         foreach ($purchases as $loop_purchase) {
             if ($loop_purchase->status && !$loop_purchase->rating->comment) {
                 $rating_available = True;
