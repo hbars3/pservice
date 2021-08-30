@@ -19,20 +19,14 @@
                         <p class="text-muted text-center">{{ $profile->profession ?? '' }}</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                                <strong>Puntuacion </strong> <a class="float-right">1,322</a>
+                                <b>Servicios Ofrecidos</b> <a class="float-right">
+                                @foreach($profile->user->services as $service)
+                                    @if($loop->last)
+                                        {{$loop->count}}
+                                    @endif
+                                @endforeach
+                                </a>
                             </li>
-                            <li class="list-group-item">
-                                <strong>Seguidores</strong> <a class="float-right">543</a>
-                            </li>
-                                <li class="list-group-item">
-                                    <strong>Total servicios</strong> <a class="float-right">
-                                    @foreach($profile->user->services as $service)
-                                        @if($loop->last)
-                                            {{$loop->count}}
-                                        @endif
-                                    @endforeach
-                                    </a>
-                                </li>
                         </ul>
 
                     </div>
@@ -91,7 +85,7 @@
                                                                 <tr>
                                                                     <td>{{$loop->iteration}}</td>
                                                                     <td>{{$service->id}}</td>
-                                                                    <td>{{$service->title}}</td>
+                                                                    <td><a href="{{ route("service.show", $service) }}">{{$service->title}}</a></td>
                                                                     <td>{{$service->price}}</td>
                                                                     <td>{{$service->description}}</td>
                                                                 </tr>

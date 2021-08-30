@@ -163,7 +163,7 @@ class ProfileController extends Controller
             'firstname'=> 'required|string|max:90',
             'lastname'=> 'required|string|max:90',
             'address'=> 'required|string|max:256',
-            'phone_number'=> 'required|string|max:30',
+            'phone_number'=> 'required|regex:/[0-9]{9}/|max:9',
             'profession'=> 'required|string|max:120',
         ];
         $message = ["required"=>' :attribute es requerido' ];
