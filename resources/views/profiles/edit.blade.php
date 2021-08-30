@@ -28,6 +28,13 @@
                         <p class="text-muted text-center">{{ $profile->profession ?? '' }}</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
+                              <strong>Puntuacion </strong> <a class="float-right">-</a>
+                            </li>
+                            <li class="list-group-item">
+                              <strong>Seguidores</strong> <a class="float-right">-</a>
+                            </li>
+                            <li class="list-group-item">
+                              <strong>Total servicios</strong> <a class="float-right">-</a>
                               <b>Total servicios</b> <a class="float-right">
                                     @foreach($profile->user->services as $service)
                                         @if($loop->last)
@@ -57,7 +64,9 @@
 
                       <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-                      <p class="text-muted">Lima,Perú</p>
+                      <p class="text-muted">
+                        {{ $profile->address ?? '' }}
+                      </p>
 
                       <hr>
 
@@ -99,7 +108,7 @@
                                     <div class="icon">
                                         <i class="ion ion-bag"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                
                                 </div>
                                 <div class="row">
                                   <div class="col-12">
@@ -190,7 +199,7 @@
                                     <div class="icon">
                                         <i class="ion ion-stats-bars"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                   
                                 </div>
                                 <div class="row">
                                   <div class="col-12">
@@ -269,7 +278,7 @@
                                   <div class="icon">
                                     <i class="ion ion-bag"></i>
                                   </div>
-                                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                 
                                 </div>
                                 <!-- small box -->
                                 <div class="row">
@@ -347,7 +356,7 @@
                                     <div class="icon">
                                         <i class="ion ion-stats-bars"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                                    
                                 </div>
                                 <!-- small box -->
                                 <div class="row">
