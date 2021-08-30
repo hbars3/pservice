@@ -38,6 +38,7 @@
                                 <p class="text-muted text-center">{{ $service->user->profile->profession ?? '' }}</p>
                                 <ul class="list-group list-group-unbordered mb-3">
                                     <li class="list-group-item">
+<<<<<<< HEAD
                                         <strong>Puntuacion</strong> <a class="float-right">1,322</a>
                                     </li>
                                     <li class="list-group-item">
@@ -45,6 +46,15 @@
                                     </li>
                                     <li class="list-group-item">
                                         <strong>Total servicios</strong> <a class="float-right">20</a>
+=======
+                                        <b>Servicios Ofrecidos</b> <a class="float-right">
+                                        @foreach($service->user->services as $service)
+                                            @if($loop->last)
+                                                {{$loop->count}}
+                                            @endif
+                                        @endforeach
+                                        </a>
+>>>>>>> origin/main
                                     </li>
                                 </ul>
                             </div>

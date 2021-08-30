@@ -35,6 +35,13 @@
                             </li>
                             <li class="list-group-item">
                               <strong>Total servicios</strong> <a class="float-right">-</a>
+                              <b>Total servicios</b> <a class="float-right">
+                                    @foreach($profile->user->services as $service)
+                                        @if($loop->last)
+                                            {{$loop->count}}
+                                        @endif
+                                    @endforeach
+                              </a>
                             </li>
                           </ul>
 
