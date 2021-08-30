@@ -28,13 +28,13 @@
                         <p class="text-muted text-center">{{ $profile->profession ?? '' }}</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                              <strong>Puntuacion </strong> <a class="float-right">-</a>
-                            </li>
-                            <li class="list-group-item">
-                              <strong>Seguidores</strong> <a class="float-right">-</a>
-                            </li>
-                            <li class="list-group-item">
-                              <strong>Total servicios</strong> <a class="float-right">-</a>
+                              <b>Total servicios</b> <a class="float-right">
+                                    @foreach($profile->user->services as $service)
+                                        @if($loop->last)
+                                            {{$loop->count}}
+                                        @endif
+                                    @endforeach
+                              </a>
                             </li>
                           </ul>
 

@@ -18,11 +18,6 @@
                         </p>
                         <p>
                             <div class = 'btn-group'>
-                                <button class="btn btn-default btn-xs" id=button type="button">
-                                        <i class="fas fa-share mr-1"></i>
-                                        Compartir
-                                </button>
-
                                 @if ( in_array($post->id, $liked_posts))
                                     @foreach ($post->likes as $like)
                                         @if (in_array($like->id, $liked_id))
