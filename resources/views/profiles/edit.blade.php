@@ -28,13 +28,13 @@
                         <p class="text-muted text-center">{{ $profile->profession ?? '' }}</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
-                              <strong>Puntuacion </strong> <a class="float-right">-</a>
-                            </li>
-                            <li class="list-group-item">
-                              <strong>Seguidores</strong> <a class="float-right">-</a>
-                            </li>
-                            <li class="list-group-item">
-                              <strong>Total servicios</strong> <a class="float-right">-</a>
+                              <b>Total servicios</b> <a class="float-right">
+                                    @foreach($profile->user->services as $service)
+                                        @if($loop->last)
+                                            {{$loop->count}}
+                                        @endif
+                                    @endforeach
+                              </a>
                             </li>
                           </ul>
 
@@ -82,7 +82,7 @@
                         <ul class="nav nav-pills">
                             <li class="nav-item"><a class="nav-link active" href="#servof" data-toggle="tab">Servicios ofrecidos</a></li>
                             <li class="nav-item"><a class="nav-link" href="#servre" data-toggle="tab">Servicios requeridos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Historial</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Historial</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Configuracion</a></li>
                         </ul>
                     </div>
@@ -412,7 +412,7 @@
                         </div>
 
                         <!-- /.tab-pane -->
-                        <div class="tab-pane" id="timeline">
+                        <!-- <div class="tab-pane" id="timeline">
                             <div class="btn-group">
                                 <div class="timeline-item">
                                     <h3 class="timeline-header"><a href="#">Equipo de soporte</a> te ha enviado un email !</h3>
@@ -482,7 +482,7 @@
                                     <a class="btn btn-danger btn">Delete</a>
                                   </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- /.tab-pane -->
                         <div class="tab-pane" id="settings">
