@@ -50,6 +50,12 @@ updateFileLabelText = function() {
     var inputLabel = document.getElementById('custom-file-label')
 
     inputLabel.innerHTML = file.files.item(0).name
+    size = file.files.item(0).size
+    if (size > 671979) {
+        alert('El archivo supera el límite de tamaño permitido')
+        file.value = "";
+        inputLabel.innerHTML = "";
+    }
 }
 </script>
 
@@ -62,6 +68,7 @@ updateFileLabelText = function() {
                 class="custom-file-input"
                 name="picture_path"
                 id="picture_path"
+                accept="image/jpeg,image/png"
                 onchange="javascript:updateFileLabelText()">
             </input>
         </div>
