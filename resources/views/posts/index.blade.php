@@ -8,7 +8,7 @@
                         <div class="user-block">
                             <img class="img-circle img-bordered-sm" src="{{ Gravatar::get($post->user->email) }}" alt="user image">
                             <span class="username">
-                                <a href="{{ route('profile.edit', $post->user->profile) }}"> {{ $post->user->profile->firstname . " " . $post->user->profile->lastname }}</a>
+                                <a href="{{ route('profile.show', $post->user->profile) }}"> {{ $post->user->profile->firstname . " " . $post->user->profile->lastname }}</a>
                             </span>
                             <span class="description">Publicado - {{ $post->created_at->setTimezone('America/Lima') }}</span>
                         </div>
