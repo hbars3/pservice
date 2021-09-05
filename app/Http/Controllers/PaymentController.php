@@ -61,7 +61,7 @@ class PaymentController extends Controller
 
         $redirectUrls = new \PayPal\Api\RedirectUrls();
         $redirectUrls->setReturnUrl(env("SERVER_LOCAL", 'http://127.0.0.1:8000') . "/status/" . $purchase_id)//Cambiar la direccion dependiendo de su servidor local
-            ->setCancelUrl(env("SEVER_LOCAL", "http://127.0.0.1:8000/status"));
+            ->setCancelUrl(env("SERVER_LOCAL", "http://127.0.0.1:8000/status"));
 
        $payment = new \PayPal\Api\Payment();
         $payment->setIntent('sale')
